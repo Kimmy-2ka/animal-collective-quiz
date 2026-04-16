@@ -1,0 +1,27 @@
+{
+  "name": "animal-collective-quiz",
+  "version": "1.0.0",
+  "description": "CLI quiz for animal collective nouns",
+  "keywords": [
+    "quiz",
+    "animal",
+    "collective-nouns"
+  ],
+  "license": "ISC",
+  "author": "Kimmy-2ka",
+  "type": "module",
+  "bin": {
+    "animal-collective-quiz": "./bin/animal_collective_quiz"
+  },
+  "scripts": {
+    "fix": "prettier --write . && eslint --fix .",
+    "lint": "prettier --check . && eslint ."
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.16.0",
+    "eslint": "^9.16.0",
+    "eslint-config-prettier": "^9.1.0",
+    "globals": "^15.13.0",
+    "prettier": "^3.4.2"
+  }
+}
