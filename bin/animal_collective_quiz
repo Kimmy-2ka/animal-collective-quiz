@@ -1,0 +1,5 @@
+#!/usr/bin/env node
+import Quiz from "../lib/quiz.js";
+
+const quiz = new Quiz("easy");
+quiz.run();
