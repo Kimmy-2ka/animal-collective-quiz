@@ -1,6 +1,6 @@
 const animalGroupsData = [
   { animal: "lions", collectiveNoun: "pride", emoji: "🦁", level: "easy" },
-  { animal: "crows", collectiveNoun: "murder", emoji: "🐦‍⬛", level: "easy" },
+  { animal: "cats", collectiveNoun: "clowder", emoji: "🐱", level: "easy" },
   { animal: "elephants", collectiveNoun: "parade", emoji: "🐘", level: "easy" },
   { animal: "dolphins", collectiveNoun: "pod", emoji: "🐬", level: "easy" },
   { animal: "fish", collectiveNoun: "school", emoji: "🐟", level: "easy" },
@@ -9,6 +9,78 @@ const animalGroupsData = [
   { animal: "wolves", collectiveNoun: "pack", emoji: "🐺", level: "easy" },
   { animal: "monkeys", collectiveNoun: "troop", emoji: "🐒", level: "easy" },
   { animal: "geese", collectiveNoun: "gaggle", emoji: "🪿", level: "easy" },
+
+  { animal: "zebras", collectiveNoun: "dazzle", emoji: "🦓", level: "normal" },
+  {
+    animal: "owls",
+    collectiveNoun: "parliament",
+    emoji: "🦉",
+    level: "normal",
+  },
+  { animal: "giraffes", collectiveNoun: "tower", emoji: "🦒", level: "normal" },
+  {
+    animal: "penguins",
+    collectiveNoun: "colony",
+    emoji: "🐧",
+    level: "normal",
+  },
+  { animal: "sharks", collectiveNoun: "shiver", emoji: "🦈", level: "normal" },
+  { animal: "otters", collectiveNoun: "romp", emoji: "🦦", level: "normal" },
+  { animal: "kangaroos", collectiveNoun: "mob", emoji: "🦘", level: "normal" },
+  { animal: "camels", collectiveNoun: "caravan", emoji: "🐪", level: "normal" },
+  { animal: "bees", collectiveNoun: "swarm", emoji: "🐝", level: "normal" },
+  { animal: "frogs", collectiveNoun: "army", emoji: "🐸", level: "normal" },
+
+  {
+    animal: "flamingos",
+    collectiveNoun: "flamboyance",
+    emoji: "🦩",
+    level: "difficult",
+  },
+  {
+    animal: "boars",
+    collectiveNoun: "sounder",
+    emoji: "🐗",
+    level: "difficult",
+  },
+  {
+    animal: "rhinoceroses",
+    collectiveNoun: "crash",
+    emoji: "🦏",
+    level: "difficult",
+  },
+  { animal: "swans", collectiveNoun: "bevy", emoji: "🦢", level: "difficult" },
+  {
+    animal: "butterflies",
+    collectiveNoun: "kaleidoscope",
+    emoji: "🦋",
+    level: "difficult",
+  },
+  {
+    animal: "bats",
+    collectiveNoun: "cauldron",
+    emoji: "🦇",
+    level: "difficult",
+  },
+  {
+    animal: "parrots",
+    collectiveNoun: "pandemonium",
+    emoji: "🦜",
+    level: "difficult",
+  },
+  {
+    animal: "crocodiles",
+    collectiveNoun: "bask",
+    emoji: "🐊",
+    level: "difficult",
+  },
+  { animal: "wolves", collectiveNoun: "rout", emoji: "🐺", level: "difficult" },
+  {
+    animal: "eagles",
+    collectiveNoun: "convocation",
+    emoji: "🦅",
+    level: "difficult",
+  },
 ];
 
 export default animalGroupsData;

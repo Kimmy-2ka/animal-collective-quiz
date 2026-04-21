@@ -1,5 +1,24 @@
 #!/usr/bin/env node
+import enquirer from "enquirer";
 import Quiz from "../lib/quiz.js";
 
-const quiz = new Quiz("easy");
-quiz.run();
+const { Select } = enquirer;
+
+async function main() {
+  const level = await chooseLevel()
+  const options = {level}
+  const quiz = new Quiz(options);
+  await quiz.run();
+}
+
+function chooseLevel(){
+  const prompt = new Select({
+    name: "level",
+    message: "Select a level",
+    choices: ["easy", "normal", "difficult"],
+  });
+
+  return prompt.run();
+}
+
+main();
