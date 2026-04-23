@@ -4,23 +4,19 @@ import Quiz from "../lib/quiz.js";
 
 const { Select, Toggle } = enquirer;
 
+const TITLE = [
+  "🦉 🐈 What Are We Called? 🐬 🐑",
+  "~Animal Collective Noun quiz~",
+  "",
+].join("\n");
+
 async function main() {
-  title();
+  console.log(TITLE);
   const level = await chooseLevel();
   const japaneseHint = await isJapaneseHint();
   const studyMode = await isStudyMode();
-  const options = { level, japaneseHint, studyMode };
-  const quiz = new Quiz(options);
+  const quiz = new Quiz({ level, japaneseHint, studyMode });
   await quiz.run();
-}
-
-function title() {
-  const title = [
-    "🦉 🐈 What Are We Called? 🐬 🐑",
-    "~Animal Collective Noun quiz~",
-    "",
-  ];
-  console.log(title.join("\n"));
 }
 
 function chooseLevel() {
