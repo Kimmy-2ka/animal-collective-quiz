@@ -8,7 +8,8 @@ async function main() {
   title();
   const level = await chooseLevel();
   const japaneseHint = await isJapaneseHint();
-  const options = { level, japaneseHint };
+  const studyMode = await isStudyMode();
+  const options = { level, japaneseHint, studyMode };
   const quiz = new Quiz(options);
   await quiz.run();
 }
@@ -37,6 +38,16 @@ function isJapaneseHint() {
     message: "Show a Japanese animal name hint?",
     enabled: "Yes",
     disabled: "No",
+  });
+
+  return prompt.run();
+}
+
+function isStudyMode() {
+  const prompt = new Toggle({
+    message: "Study + Quiz or Quiz Only?",
+    enabled: "Study + Quiz",
+    disabled: "Quiz Only",
   });
 
   return prompt.run();
