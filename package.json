@@ -11,12 +11,12 @@
   "author": "Kimmy-2ka",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kimmy-2ka/animal-collective-quiz.git"
+    "url": "git+https://github.com/kimmy-2ka/animal-collective-quiz.git"
   },
   "homepage": "https://github.com/kimmy-2ka/animal-collective-quiz",
   "type": "module",
   "bin": {
-    "animal-collective-quiz": "./bin/animal_collective_quiz"
+    "animal-collective-quiz": "bin/animal_collective_quiz"
   },
   "scripts": {
     "fix": "prettier --write . && eslint --fix .",
