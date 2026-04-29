@@ -1,6 +1,6 @@
 {
   "name": "animal-collective-quiz",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CLI quiz for animal collective nouns",
   "keywords": [
     "quiz",
