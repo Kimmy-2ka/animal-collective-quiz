@@ -1,0 +1,52 @@
+#!/usr/bin/env node
+import enquirer from "enquirer";
+import Quiz from "../lib/quiz.js";
+
+const { Select, Toggle } = enquirer;
+
+const TITLE = [
+  "🦉 🐈 What Are We Called? 🐬 🐑",
+  "~Animal Collective Noun quiz~",
+  "",
+].join("\n");
+
+async function main() {
+  console.log(TITLE);
+  const level = await chooseLevel();
+  const japaneseHint = await isJapaneseHint();
+  const studyMode = await isStudyMode();
+  const quiz = new Quiz({ level, japaneseHint, studyMode });
+  await quiz.run();
+}
+
+function chooseLevel() {
+  const prompt = new Select({
+    name: "level",
+    message: "Select a level",
+    choices: ["easy", "normal", "difficult"],
+  });
+
+  return prompt.run();
+}
+
+function isJapaneseHint() {
+  const prompt = new Toggle({
+    message: "Show a Japanese animal name hint?",
+    enabled: "Yes",
+    disabled: "No",
+  });
+
+  return prompt.run();
+}
+
+function isStudyMode() {
+  const prompt = new Toggle({
+    message: "Study + Quiz or Quiz Only?",
+    enabled: "Study + Quiz",
+    disabled: "Quiz Only",
+  });
+
+  return prompt.run();
+}
+
+main();

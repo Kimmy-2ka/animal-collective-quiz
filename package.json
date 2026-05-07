@@ -1,6 +1,6 @@
 {
   "name": "animal-collective-quiz",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CLI quiz for animal collective nouns",
   "keywords": [
     "quiz",
@@ -9,9 +9,14 @@
   ],
   "license": "ISC",
   "author": "Kimmy-2ka",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimmy-2ka/animal-collective-quiz.git"
+  },
+  "homepage": "https://github.com/kimmy-2ka/animal-collective-quiz",
   "type": "module",
   "bin": {
-    "animal-collective-quiz": "./bin/animal_collective_quiz"
+    "animal-collective-quiz": "bin/animal_collective_quiz"
   },
   "scripts": {
     "fix": "prettier --write . && eslint --fix .",
@@ -23,5 +28,8 @@
     "eslint-config-prettier": "^9.1.0",
     "globals": "^15.13.0",
     "prettier": "^3.4.2"
+  },
+  "dependencies": {
+    "enquirer": "^2.4.1"
   }
 }
